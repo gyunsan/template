@@ -4,9 +4,10 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Icon } from '@iconify/react'
 import { ThemeSwitcher } from '../ThemeSwitcher'
-import Logo from './Logo'
+import Logo from '../NextUI/Nav/Logo'
 
 const navigation = [
+    { name: 'Dashboard', href: '/dashboard' },
     { name: 'Ingredients', href: '/ingredients' },
     { name: 'Contact', href: '/contact' },
     { name: 'About', href: '/about' },
@@ -70,7 +71,6 @@ export default function Nav() {
                                 ))}
                             </div>
 
-                            <ThemeSwitcherMobile />
                             <div className="py-6">
                                 <a
                                     href="#"
